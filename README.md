@@ -3,6 +3,9 @@
 <h5 align="center">Scan and decode NFC tags on iOS</h5>
 
 <div align="center">
+  <a href="https://app.bitrise.io/app/31a1944381e3f58b">
+    <img src="https://app.bitrise.io/app/31a1944381e3f58b/status.svg?token=ZpaTRx-41YV9CJBb4lQgGQ" alt="Build Status" />
+  </a>
   <img src="https://img.shields.io/badge/platform-iOS-yellow.svg" alt="Platform" />
   <a href="https://developer.apple.com/swift">
     <img src="https://img.shields.io/badge/Swift-5.1+-F16D39.svg" alt="Swift Version" />
@@ -19,11 +22,11 @@
 - [x] Scan NFC Tag (see below about supported tags)
 - [x] Scan custom NFC tags
 
-### Supported Tag
+### Supported Tags
 
-- IC for transit in Japan
+- IC cards for transit in Japan
   - Suica, Pasmo, Kitaca, ICOCA, TOICA、manaca、PiTaPa、nimoca、SUGOCA、はやかけん
-- IC for shopping in Japan
+- IC cards for shopping in Japan
   - nanaco
   - Edy
   - WAON
@@ -112,10 +115,14 @@ configuration.message.alert = "Hold your iPhone near the Suica."
 let reader = Reader<Suica>(configuration: configuration)
 ```
 
+### Read custom tag
+
+Please see `./Sources/NFCReader/Tags/FeliCa/nanaco/Nanaco.swift`.
+
 # ToDo
-- [ ] Decode entrance and exit histories of Suica (service code: 108F)
-- [ ] Decode SF entrance histories of Suica (service code: 10CB)
-- [ ] Decode different ICs
+- [ ] Decode entrance and exit histories of Suica. (service code: 108F)
+- [ ] Decode SF entrance histories of Suica. (service code: 10CB)
+- [ ] Support more NFC tags.
 
 # Contributing
 
