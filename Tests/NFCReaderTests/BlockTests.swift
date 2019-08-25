@@ -14,7 +14,7 @@ final class BlockTests: XCTestCase {
         let block = Block.two(blockNumber: 64, serviceCodeIndex: 0b1010)
         switch block.length {
         case .two(let blockNumber):
-            XCTAssertEqual(blockNumber, 64)
+            XCTAssertEqual(blockNumber, 63)
         case .three:
             XCTFail()
         }
