@@ -74,9 +74,17 @@
 			remoteGlobalIDString = "NFCReader::NFCReaderTests";
 			remoteInfo = NFCReaderTests;
 		};
+		24D0AF192313848F00E56ED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24D0AF152313848F00E56ED8 /* FeliCaExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2469BF6822FFB5D400362AAB;
+			remoteInfo = FeliCaExample;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24D0AF152313848F00E56ED8 /* FeliCaExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FeliCaExample.xcodeproj; path = Examples/FeliCaExample/FeliCaExample.xcodeproj; sourceTree = "<group>"; };
 		"NFCReader::NFCReader::Product" /* NFCReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NFCReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"NFCReader::NFCReaderTests::Product" /* NFCReaderTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = NFCReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* MultipleTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleTags.swift; sourceTree = "<group>"; };
@@ -136,6 +144,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24D0AF162313848F00E56ED8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24D0AF1A2313848F00E56ED8 /* FeliCaExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		OBJ_15 /* Tags */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,16 +266,16 @@
 			path = FeliCa;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
+				24D0AF152313848F00E56ED8 /* FeliCaExample.xcodeproj */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_36 /* Tests */,
 				OBJ_55 /* Products */,
 				OBJ_59 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_52 /* Utilities */ = {
@@ -369,9 +385,15 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_55 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 24D0AF162313848F00E56ED8 /* Products */;
+					ProjectRef = 24D0AF152313848F00E56ED8 /* FeliCaExample.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				"NFCReader::NFCReader" /* NFCReader */,
@@ -381,6 +403,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		24D0AF1A2313848F00E56ED8 /* FeliCaExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = FeliCaExample.app;
+			remoteRef = 24D0AF192313848F00E56ED8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_101 /* Sources */ = {

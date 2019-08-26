@@ -39,7 +39,15 @@
 
 # Installation
 
+## Swift Package Manager (Recommended)
+
 You can install this framework with Swift Package Manager in Xcode 11.
+
+## Carthage
+
+```ruby
+github "tattn/NFCReader"
+```
 
 # Usage
 
@@ -50,15 +58,15 @@ import NFCReader
 
 let reader = Reader<Suica>() // `Nanaco`, `Edy` or `Waon`
 reader.read(didBecomeActive: { _ in
-	print("didBecomeActive")
+    print("didBecomeActive")
 }, didDetect: { reader, result in
-	switch result {
-	case .success(let suica):
-		let balance = suica.boardingHistory.first?.balance ?? 0
-		reader.setMessage("Your balance is ¥\(balance) .")
-	case .failure(let error):
-		reader.setMessage("something wrong")
-	}
+    switch result {
+    case .success(let suica):
+        let balance = suica.boardingHistory.first?.balance ?? 0
+        reader.setMessage("Your balance is ¥\(balance) .")
+    case .failure(let error):
+        reader.setMessage("something wrong")
+    }
 })
 ```
 
@@ -67,11 +75,10 @@ You can see more details at  `Sources/NFCReader/Tags`:
 ### Scan multiple tags 
 
 ```swift
-private let reader = Reader<FeliCa>
-self.reader.read(didDetect: { reader, result in
+let reader = Reader<FeliCa>
+reader.read(didDetect: { reader, result in
     switch result {
     case .success(let tag):
-        let balance: UInt
         switch tag {
         case .edy(let edy):
             print(edy)
@@ -90,19 +97,19 @@ self.reader.read(didDetect: { reader, result in
 
 The reader can also read just specific tags. Please see `Sources/NFCReader/Tags/FeliCa/FeliCa.swift`.
 
-### Scan repeatedly
+### Scan tags repeatedly
 
 ```swift
 reader.read(didDetect: { reader, result in
-	switch result {
-	case .success(let suica):
-		let balance = suica.boardingHistory.first?.balance ?? 0
-		reader.setMessage("Your balance is ¥\(balance) .")
-		reader.restartReading() // continue to scan
-	case .failure(let error):
-		reader.setMessage("something wrong")
-		reader.restartReading()
-	}
+    switch result {
+    case .success(let suica):
+        let balance = suica.boardingHistory.first?.balance ?? 0
+        reader.setMessage("Your balance is ¥\(balance) .")
+        reader.restartReading() // continue to scan
+    case .failure(let error):
+        reader.setMessage("something wrong")
+        reader.restartReading()
+    }
 })
 ```
 
@@ -115,7 +122,7 @@ configuration.message.alert = "Hold your iPhone near the Suica."
 let reader = Reader<Suica>(configuration: configuration)
 ```
 
-### Read custom tag
+### Read custom tags
 
 Please see `./Sources/NFCReader/Tags/FeliCa/nanaco/Nanaco.swift`.
 
@@ -140,7 +147,7 @@ Donating to help me continue working on this project.
 
 # License
 
-Suica is released under the MIT license. See LICENSE for details.
+NFCReader is released under the MIT license. See LICENSE for details.
 
 # Author
 Tatsuya Tanaka
