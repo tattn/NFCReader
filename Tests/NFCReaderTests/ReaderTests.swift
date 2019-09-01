@@ -123,7 +123,7 @@ final class ReaderTests: XCTestCase {
 
 private struct MockTag: Tag {
     static var pollingOption: NFCTagReaderSession.PollingOption = .iso18092
-    static var allServices: [Service.Type] = []
+    static var allServices: [FeliCaService.Type] = []
 
     var rawValue: Int = 1
     static func read(_ tag: ConcreteTag, completion: @escaping (Result<MockTag, TagErrors>) -> Void) {}

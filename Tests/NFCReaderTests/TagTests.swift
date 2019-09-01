@@ -6,7 +6,7 @@ final class TagTests: XCTestCase {
     func testFeliCaSystemCodeAndIdm() throws {
         struct TestTag: Tag {
             var rawValue: NFCFeliCaTag
-            static var allServices: [Service.Type] = []
+            static var allServices: [FeliCaService.Type] = []
             static func read(_ tag: NFCFeliCaTag, completion: @escaping (Result<Self, TagErrors>) -> Void) {}
         }
 

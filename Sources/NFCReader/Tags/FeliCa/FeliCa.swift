@@ -8,13 +8,19 @@
 import Foundation
 import CoreNFC
 
-public enum FeliCa: MultipleTags {
+public enum FeliCa: FeliCaTag {
     case edy(Edy)
     case nanaco(Nanaco)
     case suica(Suica)
     case waon(Waon)
+    
+    public static var servicesList: [[FeliCaService.Type]] {
+        [Edy.services, Nanaco.services, Suica.services, Waon.services]
+    }
 
-    public static var allTags: [__Tag.Type] = [Edy.self, Nanaco.self, Suica.self, Waon.self]
+    public static var services: [FeliCaService.Type] {
+        servicesList.flatMap { $0 }
+    }
 
     public var rawValue: NFCFeliCaTag {
         switch self {
@@ -22,6 +28,19 @@ public enum FeliCa: MultipleTags {
         case .nanaco(let tag): return tag.rawValue
         case .suica(let tag): return tag.rawValue
         case .waon(let tag): return tag.rawValue
+        }
+    }
+
+    public static func read(_ tag: NFCFeliCaTag, completion: @escaping (Result<Self, TagErrors>) -> Void) {
+        let services = servicesList.compactMap { $0.first }
+
+        services.requestService(with: tag) { result in
+            switch result {
+            case .success(let serviceIndex):
+                multiRead(tag, index: serviceIndex, completion: completion)
+            case .failure(let error):
+                completion(.failure(error))
+            }
         }
     }
 

@@ -1,5 +1,5 @@
 //
-//  Service.swift
+//  FeliCaService.swift
 //  
 //
 //  Created by Tatsuya Tanaka on 2019/08/15.
@@ -8,7 +8,7 @@
 import Foundation
 import CoreNFC
 
-public protocol Service {
+public protocol FeliCaService {
     static var serviceCode: Data { get }
     static func blockList(serviceCodeIndex: Int) -> [Block]
     static func blockList(numberOfBlocks: Int, serviceCodeIndex: Int) -> [Block]
@@ -18,7 +18,7 @@ public protocol Service {
     init(data: Data) throws
 }
 
-public extension Service {
+public extension FeliCaService {
     /// Block list
     /// - Parameter serviceCodeIndex: index of service code
     static func blockList(serviceCodeIndex: Int) -> [Block] {
@@ -35,7 +35,7 @@ public extension Service {
     }
 }
 
-extension Array where Element == Service.Type {
+extension Array where Element == FeliCaService.Type {
     func requestService(with tag: NFCFeliCaTag, completion: @escaping (Result<Int, TagErrors>) -> Void) {
         let serviceCodes = map { $0.serviceCode }
         tag.requestService(nodeCodeList: serviceCodes) { nodes, error in

@@ -9,12 +9,12 @@ import Foundation
 import CoreNFC
 
 /// IC for transit. Suica, Pasmo, Kitaca, ICOCA, TOICA、manaca、PiTaPa、nimoca、SUGOCA、はやかけん
-public struct Suica: Tag {
+public struct Suica: FeliCaTag {
     public let rawValue: NFCFeliCaTag
     public let cardInformation: CardInformation
     public let boardingHistories: [BoardingHistory]
 
-    public static let allServices: [Service.Type] = [CardInformation.self, BoardingHistory.self]
+    public static let services: [FeliCaService.Type] = [CardInformation.self, BoardingHistory.self]
 
     init(tag: NFCFeliCaTag, cardInformationData: Data, boardingHistoryData: [Data]) throws {
         rawValue = tag
@@ -23,7 +23,7 @@ public struct Suica: Tag {
     }
 
     public static func read(_ tag: NFCFeliCaTag, completion: @escaping (Result<Suica, TagErrors>) -> Void) {
-        allServices.readWithoutEncryption(with: tag) { result in
+        services.readWithoutEncryption(with: tag) { result in
             switch result {
             case .success(let dataList):
                 do {

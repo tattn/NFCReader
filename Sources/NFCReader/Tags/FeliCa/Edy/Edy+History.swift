@@ -8,7 +8,7 @@
 import Foundation
 
 public extension Edy {
-    struct History: Service {
+    struct History: FeliCaService {
         /// Service code [lower byte, upper byte] (little-endian)
         public static let serviceCode = Data([0x17, 0x0F])
 

@@ -8,11 +8,11 @@
 import Foundation
 import CoreNFC
 
-public struct Edy: Tag {
+public struct Edy: FeliCaTag {
     public let rawValue: NFCFeliCaTag
     public let histories: [History]
 
-    public static let allServices: [Service.Type] = [History.self]
+    public static let services: [FeliCaService.Type] = [History.self]
 
     init(tag: NFCFeliCaTag, historyData: [Data]) throws {
         rawValue = tag
@@ -20,7 +20,7 @@ public struct Edy: Tag {
     }
 
     public static func read(_ tag: NFCFeliCaTag, completion: @escaping (Result<Self, TagErrors>) -> Void) {
-        allServices.readWithoutEncryption(with: tag) { result in
+        services.readWithoutEncryption(with: tag) { result in
             switch result {
             case .success(let dataList):
                 do {

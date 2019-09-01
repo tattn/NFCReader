@@ -8,7 +8,7 @@
 import Foundation
 import CoreNFC
 
-public protocol Tag: __Tag {
+public protocol Tag {
     associatedtype ConcreteTag
 
     var rawValue: ConcreteTag { get }
@@ -16,10 +16,6 @@ public protocol Tag: __Tag {
 
     static func read(_ tag: ConcreteTag, completion: @escaping (Result<Self, TagErrors>) -> Void)
     static func __read(_ tag: NFCTag, completion: @escaping (Result<Self, TagErrors>) -> Void)
-}
-
-public protocol __Tag {
-    static var allServices: [Service.Type] { get }
 }
 
 public extension Tag where ConcreteTag == NFCFeliCaTag {

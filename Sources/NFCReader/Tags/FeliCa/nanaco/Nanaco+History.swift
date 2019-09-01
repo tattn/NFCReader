@@ -8,7 +8,7 @@
 import Foundation
 
 public extension Nanaco {
-    struct History: Service {
+    struct History: FeliCaService {
         /// Service code [lower byte, upper byte] (little-endian)
         public static let serviceCode = Data([0x4F, 0x56])
 

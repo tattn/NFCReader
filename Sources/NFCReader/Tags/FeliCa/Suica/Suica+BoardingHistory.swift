@@ -8,7 +8,7 @@
 import Foundation
 
 public extension Suica {
-    struct BoardingHistory: Service {
+    struct BoardingHistory: FeliCaService {
         /// Service code [lower byte, upper byte] (little-endian)
         public static let serviceCode = Data([0x0f, 0x09])
 
