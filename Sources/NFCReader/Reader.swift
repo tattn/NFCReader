@@ -90,13 +90,13 @@ open class Reader<T: Tag>: NSObject {
 
 extension Reader: NFCTagReaderSessionDelegate {
     public func tagReaderSessionDidBecomeActive(_ session: NFCTagReaderSession) {
-        DispatchQueue.main.async {
+        DispatchQueue.mainAsyncIfNeeded {
             self.didBecomeActive?(self)
         }
     }
 
     public func tagReaderSession(_ session: NFCTagReaderSession, didInvalidateWithError error: Error) {
-        DispatchQueue.main.async {
+        DispatchQueue.mainAsyncIfNeeded {
             self.didDetect?(self, .failure(.scanFailure(NFCReaderError(error: error))))
         }
     }
@@ -120,7 +120,7 @@ extension Reader: NFCTagReaderSessionDelegate {
             }
 
             if let error = error {
-                DispatchQueue.main.async {
+                DispatchQueue.mainAsyncIfNeeded {
                     self.didDetect?(self, .failure(.tagConnectionFailure(NFCReaderError(error: error))))
                     invalidateAutomatically()
                 }
@@ -128,7 +128,7 @@ extension Reader: NFCTagReaderSessionDelegate {
             }
 
             T.__read(tag) { result in
-                DispatchQueue.main.async {
+                DispatchQueue.mainAsyncIfNeeded {
                     self.didDetect?(self, result.mapError(Errors.readTagFailure))
                     invalidateAutomatically()
                 }
