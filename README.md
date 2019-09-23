@@ -25,7 +25,7 @@
 ### Supported Tags
 
 - IC cards for transit in Japan
-  - Suica, Pasmo, Kitaca, ICOCA, TOICA、manaca、PiTaPa、nimoca、SUGOCA、はやかけん
+  - Suica, Pasmo, Kitaca, ICOCA, TOICA, manaca, PiTaPa, nimoca, SUGOCA, はやかけん
 - IC cards for shopping in Japan
   - nanaco
   - Edy
@@ -36,6 +36,7 @@
 - Xcode 11.x
 - Swift 5.1+
 - iOS 13.0+
+- iPhone 7 and later
 
 # Installation
 
@@ -48,6 +49,19 @@ You can install this framework with Swift Package Manager in Xcode 11.
 ```ruby
 github "tattn/NFCReader"
 ```
+
+# Configuration
+
+NFCReader uses Core NFC, so you need to add the following setting:
+
+1. Add `Near Field Communication Tag Reading` to Capabilities.
+2. Add `Privacy - NFC Scan Usage Description` to Info.plist.
+3. Add system codes of the card you want to scan to Info.plist.
+
+|Card|System code|
+|:---:|:---:|
+|Transit cards in Japan|0003|
+|nanaco, Edy, WAON|FE00|
 
 # Usage
 
