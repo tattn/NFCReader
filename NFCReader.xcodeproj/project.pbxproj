@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"NFCReader::NFCReaderPackageTests::ProductTarget" /* NFCReaderPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_93 /* Build configuration list for PBXAggregateTarget "NFCReaderPackageTests" */;
+			buildConfigurationList = OBJ_96 /* Build configuration list for PBXAggregateTarget "NFCReaderPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_96 /* PBXTargetDependency */,
+				OBJ_99 /* PBXTargetDependency */,
 			);
 			name = NFCReaderPackageTests;
 			productName = NFCReaderPackageTests;
@@ -21,80 +21,73 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		OBJ_102 /* BlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* BlockTests.swift */; };
-		OBJ_103 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Mock.swift */; };
-		OBJ_104 /* MultipleTagsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* MultipleTagsTests.swift */; };
-		OBJ_105 /* ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* ReaderTests.swift */; };
-		OBJ_106 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* ServiceTests.swift */; };
-		OBJ_107 /* TagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* TagTests.swift */; };
-		OBJ_108 /* Edy+HistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Edy+HistoryTests.swift */; };
-		OBJ_109 /* Nanaco+HistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Nanaco+HistoryTests.swift */; };
-		OBJ_110 /* Suica+BoardingHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Suica+BoardingHistoryTests.swift */; };
-		OBJ_111 /* Suica+CardInformationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Suica+CardInformationTests.swift */; };
-		OBJ_112 /* Waon+HistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Waon+HistoryTests.swift */; };
-		OBJ_113 /* FeliCaTagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* FeliCaTagTests.swift */; };
-		OBJ_114 /* FixedWidthIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* FixedWidthIntegerTests.swift */; };
-		OBJ_115 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* XCTestManifests.swift */; };
-		OBJ_117 /* NFCReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NFCReader::NFCReader::Product" /* NFCReader.framework */; };
-		OBJ_65 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Block.swift */; };
-		OBJ_66 /* MultipleTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* MultipleTags.swift */; };
-		OBJ_67 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Reader.swift */; };
-		OBJ_68 /* ReaderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ReaderConfiguration.swift */; };
-		OBJ_69 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Service.swift */; };
-		OBJ_70 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Tag.swift */; };
-		OBJ_71 /* Edy+History.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Edy+History.swift */; };
-		OBJ_72 /* Edy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Edy.swift */; };
-		OBJ_73 /* FeliCa.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* FeliCa.swift */; };
-		OBJ_74 /* Suica+BoardingHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Suica+BoardingHistory.swift */; };
-		OBJ_75 /* Suica+CardInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Suica+CardInformation.swift */; };
-		OBJ_76 /* Suica.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Suica.swift */; };
-		OBJ_77 /* Waon+History.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Waon+History.swift */; };
-		OBJ_78 /* Waon.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Waon.swift */; };
-		OBJ_79 /* Nanaco+History.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Nanaco+History.swift */; };
-		OBJ_80 /* Nanaco.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Nanaco.swift */; };
-		OBJ_81 /* CoreNFC+.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* CoreNFC+.swift */; };
-		OBJ_82 /* Error+.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Error+.swift */; };
-		OBJ_83 /* FixedWidthInteger+.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* FixedWidthInteger+.swift */; };
-		OBJ_84 /* Optional+.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Optional+.swift */; };
-		OBJ_91 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_105 /* BlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* BlockTests.swift */; };
+		OBJ_106 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Mock.swift */; };
+		OBJ_107 /* MultipleTagsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* MultipleTagsTests.swift */; };
+		OBJ_108 /* ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* ReaderTests.swift */; };
+		OBJ_109 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* ServiceTests.swift */; };
+		OBJ_110 /* TagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* TagTests.swift */; };
+		OBJ_111 /* Edy+HistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Edy+HistoryTests.swift */; };
+		OBJ_112 /* Nanaco+HistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Nanaco+HistoryTests.swift */; };
+		OBJ_113 /* Suica+BoardingHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Suica+BoardingHistoryTests.swift */; };
+		OBJ_114 /* Suica+CardInformationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Suica+CardInformationTests.swift */; };
+		OBJ_115 /* Waon+HistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Waon+HistoryTests.swift */; };
+		OBJ_116 /* FeliCaTagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* FeliCaTagTests.swift */; };
+		OBJ_117 /* FixedWidthIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* FixedWidthIntegerTests.swift */; };
+		OBJ_118 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* XCTestManifests.swift */; };
+		OBJ_120 /* NFCReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NFCReader::NFCReader::Product" /* NFCReader.framework */; };
+		OBJ_67 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Block.swift */; };
+		OBJ_68 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Reader.swift */; };
+		OBJ_69 /* ReaderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ReaderConfiguration.swift */; };
+		OBJ_70 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Tag.swift */; };
+		OBJ_71 /* Edy+History.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Edy+History.swift */; };
+		OBJ_72 /* Edy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Edy.swift */; };
+		OBJ_73 /* FeliCa.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* FeliCa.swift */; };
+		OBJ_74 /* FeliCaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* FeliCaService.swift */; };
+		OBJ_75 /* FeliCaTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* FeliCaTag.swift */; };
+		OBJ_76 /* Suica+BoardingHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Suica+BoardingHistory.swift */; };
+		OBJ_77 /* Suica+CardInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Suica+CardInformation.swift */; };
+		OBJ_78 /* Suica.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Suica.swift */; };
+		OBJ_79 /* Waon+History.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Waon+History.swift */; };
+		OBJ_80 /* Waon.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Waon.swift */; };
+		OBJ_81 /* Nanaco+History.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Nanaco+History.swift */; };
+		OBJ_82 /* Nanaco.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Nanaco.swift */; };
+		OBJ_83 /* CoreNFC+.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* CoreNFC+.swift */; };
+		OBJ_84 /* DispatchQueue+.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* DispatchQueue+.swift */; };
+		OBJ_85 /* Error+.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Error+.swift */; };
+		OBJ_86 /* FixedWidthInteger+.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* FixedWidthInteger+.swift */; };
+		OBJ_87 /* Optional+.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Optional+.swift */; };
+		OBJ_94 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		24D0AEEE2312C02300E56ED8 /* PBXContainerItemProxy */ = {
+		24E48E02233DCB2900B93A88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "NFCReader::NFCReader";
 			remoteInfo = NFCReader;
 		};
-		24D0AEEF2312C0BB00E56ED8 /* PBXContainerItemProxy */ = {
+		24E48E03233DCB2A00B93A88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "NFCReader::NFCReaderTests";
 			remoteInfo = NFCReaderTests;
 		};
-		24D0AF192313848F00E56ED8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 24D0AF152313848F00E56ED8 /* FeliCaExample.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2469BF6822FFB5D400362AAB;
-			remoteInfo = FeliCaExample;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24D0AF152313848F00E56ED8 /* FeliCaExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FeliCaExample.xcodeproj; path = Examples/FeliCaExample/FeliCaExample.xcodeproj; sourceTree = "<group>"; };
-		"NFCReader::NFCReader::Product" /* NFCReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NFCReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"NFCReader::NFCReader::Product" /* NFCReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NFCReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"NFCReader::NFCReaderTests::Product" /* NFCReaderTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = NFCReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* MultipleTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleTags.swift; sourceTree = "<group>"; };
-		OBJ_11 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
-		OBJ_12 /* ReaderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderConfiguration.swift; sourceTree = "<group>"; };
-		OBJ_13 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		OBJ_14 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
-		OBJ_18 /* Edy+History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edy+History.swift"; sourceTree = "<group>"; };
-		OBJ_19 /* Edy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edy.swift; sourceTree = "<group>"; };
-		OBJ_20 /* FeliCa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeliCa.swift; sourceTree = "<group>"; };
+		OBJ_10 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		OBJ_11 /* ReaderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_12 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Edy+History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edy+History.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* Edy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edy.swift; sourceTree = "<group>"; };
+		OBJ_18 /* FeliCa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeliCa.swift; sourceTree = "<group>"; };
+		OBJ_19 /* FeliCaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeliCaService.swift; sourceTree = "<group>"; };
+		OBJ_20 /* FeliCaTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeliCaTag.swift; sourceTree = "<group>"; };
 		OBJ_22 /* Suica+BoardingHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Suica+BoardingHistory.swift"; sourceTree = "<group>"; };
 		OBJ_23 /* Suica+CardInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Suica+CardInformation.swift"; sourceTree = "<group>"; };
 		OBJ_24 /* Suica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suica.swift; sourceTree = "<group>"; };
@@ -103,38 +96,41 @@
 		OBJ_29 /* Nanaco+History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nanaco+History.swift"; sourceTree = "<group>"; };
 		OBJ_30 /* Nanaco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nanaco.swift; sourceTree = "<group>"; };
 		OBJ_32 /* CoreNFC+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreNFC+.swift"; sourceTree = "<group>"; };
-		OBJ_33 /* Error+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+.swift"; sourceTree = "<group>"; };
-		OBJ_34 /* FixedWidthInteger+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FixedWidthInteger+.swift"; sourceTree = "<group>"; };
-		OBJ_35 /* Optional+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+.swift"; sourceTree = "<group>"; };
-		OBJ_38 /* BlockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTests.swift; sourceTree = "<group>"; };
-		OBJ_39 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
-		OBJ_40 /* MultipleTagsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleTagsTests.swift; sourceTree = "<group>"; };
-		OBJ_41 /* ReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderTests.swift; sourceTree = "<group>"; };
-		OBJ_42 /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
-		OBJ_43 /* TagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTests.swift; sourceTree = "<group>"; };
-		OBJ_46 /* Edy+HistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edy+HistoryTests.swift"; sourceTree = "<group>"; };
-		OBJ_47 /* Nanaco+HistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nanaco+HistoryTests.swift"; sourceTree = "<group>"; };
-		OBJ_48 /* Suica+BoardingHistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Suica+BoardingHistoryTests.swift"; sourceTree = "<group>"; };
-		OBJ_49 /* Suica+CardInformationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Suica+CardInformationTests.swift"; sourceTree = "<group>"; };
-		OBJ_50 /* Waon+HistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Waon+HistoryTests.swift"; sourceTree = "<group>"; };
-		OBJ_51 /* FeliCaTagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeliCaTagTests.swift; sourceTree = "<group>"; };
-		OBJ_53 /* FixedWidthIntegerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedWidthIntegerTests.swift; sourceTree = "<group>"; };
-		OBJ_54 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_33 /* DispatchQueue+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+.swift"; sourceTree = "<group>"; };
+		OBJ_34 /* Error+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+.swift"; sourceTree = "<group>"; };
+		OBJ_35 /* FixedWidthInteger+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FixedWidthInteger+.swift"; sourceTree = "<group>"; };
+		OBJ_36 /* Optional+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+.swift"; sourceTree = "<group>"; };
+		OBJ_39 /* BlockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTests.swift; sourceTree = "<group>"; };
+		OBJ_40 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		OBJ_41 /* MultipleTagsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleTagsTests.swift; sourceTree = "<group>"; };
+		OBJ_42 /* ReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderTests.swift; sourceTree = "<group>"; };
+		OBJ_43 /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
+		OBJ_44 /* TagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTests.swift; sourceTree = "<group>"; };
+		OBJ_47 /* Edy+HistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edy+HistoryTests.swift"; sourceTree = "<group>"; };
+		OBJ_48 /* Nanaco+HistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nanaco+HistoryTests.swift"; sourceTree = "<group>"; };
+		OBJ_49 /* Suica+BoardingHistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Suica+BoardingHistoryTests.swift"; sourceTree = "<group>"; };
+		OBJ_50 /* Suica+CardInformationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Suica+CardInformationTests.swift"; sourceTree = "<group>"; };
+		OBJ_51 /* Waon+HistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Waon+HistoryTests.swift"; sourceTree = "<group>"; };
+		OBJ_52 /* FeliCaTagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeliCaTagTests.swift; sourceTree = "<group>"; };
+		OBJ_54 /* FixedWidthIntegerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedWidthIntegerTests.swift; sourceTree = "<group>"; };
+		OBJ_55 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_59 /* Examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Examples; sourceTree = SOURCE_ROOT; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_61 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_9 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_116 /* Frameworks */ = {
+		OBJ_119 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_117 /* NFCReader.framework in Frameworks */,
+				OBJ_120 /* NFCReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_85 /* Frameworks */ = {
+		OBJ_88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
@@ -144,27 +140,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24D0AF162313848F00E56ED8 /* Products */ = {
+		OBJ_13 /* Tags */ = {
 			isa = PBXGroup;
 			children = (
-				24D0AF1A2313848F00E56ED8 /* FeliCaExample.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		OBJ_15 /* Tags */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_16 /* FeliCa */,
+				OBJ_14 /* FeliCa */,
 			);
 			path = Tags;
 			sourceTree = "<group>";
 		};
-		OBJ_16 /* FeliCa */ = {
+		OBJ_14 /* FeliCa */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_17 /* Edy */,
-				OBJ_20 /* FeliCa.swift */,
+				OBJ_15 /* Edy */,
+				OBJ_18 /* FeliCa.swift */,
+				OBJ_19 /* FeliCaService.swift */,
+				OBJ_20 /* FeliCaTag.swift */,
 				OBJ_21 /* Suica */,
 				OBJ_25 /* Waon */,
 				OBJ_28 /* nanaco */,
@@ -172,11 +162,11 @@
 			path = FeliCa;
 			sourceTree = "<group>";
 		};
-		OBJ_17 /* Edy */ = {
+		OBJ_15 /* Edy */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_18 /* Edy+History.swift */,
-				OBJ_19 /* Edy.swift */,
+				OBJ_16 /* Edy+History.swift */,
+				OBJ_17 /* Edy.swift */,
 			);
 			path = Edy;
 			sourceTree = "<group>";
@@ -213,84 +203,87 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_32 /* CoreNFC+.swift */,
-				OBJ_33 /* Error+.swift */,
-				OBJ_34 /* FixedWidthInteger+.swift */,
-				OBJ_35 /* Optional+.swift */,
+				OBJ_33 /* DispatchQueue+.swift */,
+				OBJ_34 /* Error+.swift */,
+				OBJ_35 /* FixedWidthInteger+.swift */,
+				OBJ_36 /* Optional+.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		OBJ_36 /* Tests */ = {
+		OBJ_37 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_37 /* NFCReaderTests */,
+				OBJ_38 /* NFCReaderTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_37 /* NFCReaderTests */ = {
+		OBJ_38 /* NFCReaderTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_38 /* BlockTests.swift */,
-				OBJ_39 /* Mock.swift */,
-				OBJ_40 /* MultipleTagsTests.swift */,
-				OBJ_41 /* ReaderTests.swift */,
-				OBJ_42 /* ServiceTests.swift */,
-				OBJ_43 /* TagTests.swift */,
-				OBJ_44 /* Tags */,
-				OBJ_52 /* Utilities */,
-				OBJ_54 /* XCTestManifests.swift */,
+				OBJ_39 /* BlockTests.swift */,
+				OBJ_40 /* Mock.swift */,
+				OBJ_41 /* MultipleTagsTests.swift */,
+				OBJ_42 /* ReaderTests.swift */,
+				OBJ_43 /* ServiceTests.swift */,
+				OBJ_44 /* TagTests.swift */,
+				OBJ_45 /* Tags */,
+				OBJ_53 /* Utilities */,
+				OBJ_55 /* XCTestManifests.swift */,
 			);
 			name = NFCReaderTests;
 			path = Tests/NFCReaderTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_44 /* Tags */ = {
+		OBJ_45 /* Tags */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_45 /* FeliCa */,
-				OBJ_51 /* FeliCaTagTests.swift */,
+				OBJ_46 /* FeliCa */,
+				OBJ_52 /* FeliCaTagTests.swift */,
 			);
 			path = Tags;
 			sourceTree = "<group>";
 		};
-		OBJ_45 /* FeliCa */ = {
+		OBJ_46 /* FeliCa */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_46 /* Edy+HistoryTests.swift */,
-				OBJ_47 /* Nanaco+HistoryTests.swift */,
-				OBJ_48 /* Suica+BoardingHistoryTests.swift */,
-				OBJ_49 /* Suica+CardInformationTests.swift */,
-				OBJ_50 /* Waon+HistoryTests.swift */,
+				OBJ_47 /* Edy+HistoryTests.swift */,
+				OBJ_48 /* Nanaco+HistoryTests.swift */,
+				OBJ_49 /* Suica+BoardingHistoryTests.swift */,
+				OBJ_50 /* Suica+CardInformationTests.swift */,
+				OBJ_51 /* Waon+HistoryTests.swift */,
 			);
 			path = FeliCa;
 			sourceTree = "<group>";
 		};
-		OBJ_5 = {
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
-				24D0AF152313848F00E56ED8 /* FeliCaExample.xcodeproj */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_36 /* Tests */,
-				OBJ_55 /* Products */,
-				OBJ_59 /* README.md */,
+				OBJ_37 /* Tests */,
+				OBJ_56 /* Products */,
+				OBJ_59 /* Examples */,
+				OBJ_60 /* LICENSE */,
+				OBJ_61 /* README.md */,
 			);
+			name = "";
 			sourceTree = "<group>";
 		};
-		OBJ_52 /* Utilities */ = {
+		OBJ_53 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_53 /* FixedWidthIntegerTests.swift */,
+				OBJ_54 /* FixedWidthIntegerTests.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		OBJ_55 /* Products */ = {
+		OBJ_56 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"NFCReader::NFCReaderTests::Product" /* NFCReaderTests.xctest */,
 				"NFCReader::NFCReader::Product" /* NFCReader.framework */,
+				"NFCReader::NFCReaderTests::Product" /* NFCReaderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -307,12 +300,10 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* Block.swift */,
-				OBJ_10 /* MultipleTags.swift */,
-				OBJ_11 /* Reader.swift */,
-				OBJ_12 /* ReaderConfiguration.swift */,
-				OBJ_13 /* Service.swift */,
-				OBJ_14 /* Tag.swift */,
-				OBJ_15 /* Tags */,
+				OBJ_10 /* Reader.swift */,
+				OBJ_11 /* ReaderConfiguration.swift */,
+				OBJ_12 /* Tag.swift */,
+				OBJ_13 /* Tags */,
 				OBJ_31 /* Utilities */,
 			);
 			name = NFCReader;
@@ -324,10 +315,10 @@
 /* Begin PBXNativeTarget section */
 		"NFCReader::NFCReader" /* NFCReader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_61 /* Build configuration list for PBXNativeTarget "NFCReader" */;
+			buildConfigurationList = OBJ_63 /* Build configuration list for PBXNativeTarget "NFCReader" */;
 			buildPhases = (
-				OBJ_64 /* Sources */,
-				OBJ_85 /* Frameworks */,
+				OBJ_66 /* Sources */,
+				OBJ_88 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,15 +331,15 @@
 		};
 		"NFCReader::NFCReaderTests" /* NFCReaderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_98 /* Build configuration list for PBXNativeTarget "NFCReaderTests" */;
+			buildConfigurationList = OBJ_101 /* Build configuration list for PBXNativeTarget "NFCReaderTests" */;
 			buildPhases = (
-				OBJ_101 /* Sources */,
-				OBJ_116 /* Frameworks */,
+				OBJ_104 /* Sources */,
+				OBJ_119 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_118 /* PBXTargetDependency */,
+				OBJ_121 /* PBXTargetDependency */,
 			);
 			name = NFCReaderTests;
 			productName = NFCReaderTests;
@@ -357,9 +348,9 @@
 		};
 		"NFCReader::SwiftPMPackageDescription" /* NFCReaderPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_87 /* Build configuration list for PBXNativeTarget "NFCReaderPackageDescription" */;
+			buildConfigurationList = OBJ_90 /* Build configuration list for PBXNativeTarget "NFCReaderPackageDescription" */;
 			buildPhases = (
-				OBJ_90 /* Sources */,
+				OBJ_93 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -385,15 +376,9 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5;
-			productRefGroup = OBJ_55 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_56 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 24D0AF162313848F00E56ED8 /* Products */;
-					ProjectRef = 24D0AF152313848F00E56ED8 /* FeliCaExample.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				"NFCReader::NFCReader" /* NFCReader */,
@@ -404,90 +389,106 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		24D0AF1A2313848F00E56ED8 /* FeliCaExample.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = FeliCaExample.app;
-			remoteRef = 24D0AF192313848F00E56ED8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_101 /* Sources */ = {
+		OBJ_104 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_102 /* BlockTests.swift in Sources */,
-				OBJ_103 /* Mock.swift in Sources */,
-				OBJ_104 /* MultipleTagsTests.swift in Sources */,
-				OBJ_105 /* ReaderTests.swift in Sources */,
-				OBJ_106 /* ServiceTests.swift in Sources */,
-				OBJ_107 /* TagTests.swift in Sources */,
-				OBJ_108 /* Edy+HistoryTests.swift in Sources */,
-				OBJ_109 /* Nanaco+HistoryTests.swift in Sources */,
-				OBJ_110 /* Suica+BoardingHistoryTests.swift in Sources */,
-				OBJ_111 /* Suica+CardInformationTests.swift in Sources */,
-				OBJ_112 /* Waon+HistoryTests.swift in Sources */,
-				OBJ_113 /* FeliCaTagTests.swift in Sources */,
-				OBJ_114 /* FixedWidthIntegerTests.swift in Sources */,
-				OBJ_115 /* XCTestManifests.swift in Sources */,
+				OBJ_105 /* BlockTests.swift in Sources */,
+				OBJ_106 /* Mock.swift in Sources */,
+				OBJ_107 /* MultipleTagsTests.swift in Sources */,
+				OBJ_108 /* ReaderTests.swift in Sources */,
+				OBJ_109 /* ServiceTests.swift in Sources */,
+				OBJ_110 /* TagTests.swift in Sources */,
+				OBJ_111 /* Edy+HistoryTests.swift in Sources */,
+				OBJ_112 /* Nanaco+HistoryTests.swift in Sources */,
+				OBJ_113 /* Suica+BoardingHistoryTests.swift in Sources */,
+				OBJ_114 /* Suica+CardInformationTests.swift in Sources */,
+				OBJ_115 /* Waon+HistoryTests.swift in Sources */,
+				OBJ_116 /* FeliCaTagTests.swift in Sources */,
+				OBJ_117 /* FixedWidthIntegerTests.swift in Sources */,
+				OBJ_118 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_64 /* Sources */ = {
+		OBJ_66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_65 /* Block.swift in Sources */,
-				OBJ_66 /* MultipleTags.swift in Sources */,
-				OBJ_67 /* Reader.swift in Sources */,
-				OBJ_68 /* ReaderConfiguration.swift in Sources */,
-				OBJ_69 /* Service.swift in Sources */,
+				OBJ_67 /* Block.swift in Sources */,
+				OBJ_68 /* Reader.swift in Sources */,
+				OBJ_69 /* ReaderConfiguration.swift in Sources */,
 				OBJ_70 /* Tag.swift in Sources */,
 				OBJ_71 /* Edy+History.swift in Sources */,
 				OBJ_72 /* Edy.swift in Sources */,
 				OBJ_73 /* FeliCa.swift in Sources */,
-				OBJ_74 /* Suica+BoardingHistory.swift in Sources */,
-				OBJ_75 /* Suica+CardInformation.swift in Sources */,
-				OBJ_76 /* Suica.swift in Sources */,
-				OBJ_77 /* Waon+History.swift in Sources */,
-				OBJ_78 /* Waon.swift in Sources */,
-				OBJ_79 /* Nanaco+History.swift in Sources */,
-				OBJ_80 /* Nanaco.swift in Sources */,
-				OBJ_81 /* CoreNFC+.swift in Sources */,
-				OBJ_82 /* Error+.swift in Sources */,
-				OBJ_83 /* FixedWidthInteger+.swift in Sources */,
-				OBJ_84 /* Optional+.swift in Sources */,
+				OBJ_74 /* FeliCaService.swift in Sources */,
+				OBJ_75 /* FeliCaTag.swift in Sources */,
+				OBJ_76 /* Suica+BoardingHistory.swift in Sources */,
+				OBJ_77 /* Suica+CardInformation.swift in Sources */,
+				OBJ_78 /* Suica.swift in Sources */,
+				OBJ_79 /* Waon+History.swift in Sources */,
+				OBJ_80 /* Waon.swift in Sources */,
+				OBJ_81 /* Nanaco+History.swift in Sources */,
+				OBJ_82 /* Nanaco.swift in Sources */,
+				OBJ_83 /* CoreNFC+.swift in Sources */,
+				OBJ_84 /* DispatchQueue+.swift in Sources */,
+				OBJ_85 /* Error+.swift in Sources */,
+				OBJ_86 /* FixedWidthInteger+.swift in Sources */,
+				OBJ_87 /* Optional+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_90 /* Sources */ = {
+		OBJ_93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_91 /* Package.swift in Sources */,
+				OBJ_94 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_118 /* PBXTargetDependency */ = {
+		OBJ_121 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "NFCReader::NFCReader" /* NFCReader */;
-			targetProxy = 24D0AEEE2312C02300E56ED8 /* PBXContainerItemProxy */;
+			targetProxy = 24E48E02233DCB2900B93A88 /* PBXContainerItemProxy */;
 		};
-		OBJ_96 /* PBXTargetDependency */ = {
+		OBJ_99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "NFCReader::NFCReaderTests" /* NFCReaderTests */;
-			targetProxy = 24D0AEEF2312C0BB00E56ED8 /* PBXContainerItemProxy */;
+			targetProxy = 24E48E03233DCB2A00B93A88 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_100 /* Release */ = {
+		OBJ_102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = NFCReader.xcodeproj/NFCReaderTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = NFCReaderTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_103 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -532,7 +533,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USE_HEADERMAP = NO;
@@ -556,14 +557,14 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
-		OBJ_62 /* Debug */ = {
+		OBJ_64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -591,7 +592,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_63 /* Release */ = {
+		OBJ_65 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -619,64 +620,48 @@
 			};
 			name = Release;
 		};
-		OBJ_88 /* Debug */ = {
+		OBJ_91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode11-beta6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode11 GM2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		OBJ_89 /* Release */ = {
+		OBJ_92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode11-beta6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode11 GM2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		OBJ_94 /* Debug */ = {
+		OBJ_97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_95 /* Release */ = {
+		OBJ_98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Release;
-		};
-		OBJ_99 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = NFCReader.xcodeproj/NFCReaderTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = NFCReaderTests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		OBJ_101 /* Build configuration list for PBXNativeTarget "NFCReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_102 /* Debug */,
+				OBJ_103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		OBJ_2 /* Build configuration list for PBXProject "NFCReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -686,38 +671,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_61 /* Build configuration list for PBXNativeTarget "NFCReader" */ = {
+		OBJ_63 /* Build configuration list for PBXNativeTarget "NFCReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_62 /* Debug */,
-				OBJ_63 /* Release */,
+				OBJ_64 /* Debug */,
+				OBJ_65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_87 /* Build configuration list for PBXNativeTarget "NFCReaderPackageDescription" */ = {
+		OBJ_90 /* Build configuration list for PBXNativeTarget "NFCReaderPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_88 /* Debug */,
-				OBJ_89 /* Release */,
+				OBJ_91 /* Debug */,
+				OBJ_92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_93 /* Build configuration list for PBXAggregateTarget "NFCReaderPackageTests" */ = {
+		OBJ_96 /* Build configuration list for PBXAggregateTarget "NFCReaderPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_94 /* Debug */,
-				OBJ_95 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_98 /* Build configuration list for PBXNativeTarget "NFCReaderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_99 /* Debug */,
-				OBJ_100 /* Release */,
+				OBJ_97 /* Debug */,
+				OBJ_98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
