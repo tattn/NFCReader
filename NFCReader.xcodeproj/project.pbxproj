@@ -21,6 +21,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		06218EB925CEAB1200EEFA5E /* FelicaExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06218EB825CEAB1200EEFA5E /* FelicaExampleApp.swift */; };
+		06218EBB25CEAB1200EEFA5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06218EBA25CEAB1200EEFA5E /* ContentView.swift */; };
+		06218EBD25CEAB1400EEFA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06218EBC25CEAB1400EEFA5E /* Assets.xcassets */; };
+		06218EC025CEAB1400EEFA5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06218EBF25CEAB1400EEFA5E /* Preview Assets.xcassets */; };
+		06218EDF25CEAC0A00EEFA5E /* NFCReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NFCReader::NFCReader::Product" /* NFCReader.framework */; };
+		06218F0325CEAD4700EEFA5E /* Debug+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06218ECE25CEABEA00EEFA5E /* Debug+CustomStringConvertible.swift */; };
 		OBJ_105 /* BlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* BlockTests.swift */; };
 		OBJ_106 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Mock.swift */; };
 		OBJ_107 /* MultipleTagsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* MultipleTagsTests.swift */; };
@@ -61,6 +67,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		06218EDC25CEAC0300EEFA5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "NFCReader::NFCReader";
+			remoteInfo = NFCReader;
+		};
+		06218EFC25CEAD2300EEFA5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06218EB525CEAB1200EEFA5E;
+			remoteInfo = FelicaExample;
+		};
 		2444160F233DD152008A8BD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
@@ -78,8 +98,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06218EB625CEAB1200EEFA5E /* FelicaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FelicaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06218EB825CEAB1200EEFA5E /* FelicaExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FelicaExampleApp.swift; sourceTree = "<group>"; };
+		06218EBA25CEAB1200EEFA5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		06218EBC25CEAB1400EEFA5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06218EBF25CEAB1400EEFA5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		06218EC125CEAB1400EEFA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06218ECE25CEABEA00EEFA5E /* Debug+CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Debug+CustomStringConvertible.swift"; sourceTree = "<group>"; };
 		"NFCReader::NFCReader::Product" /* NFCReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NFCReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"NFCReader::NFCReaderTests::Product" /* NFCReaderTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = NFCReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"NFCReader::NFCReaderTests::Product" /* NFCReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = NFCReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
 		OBJ_11 /* ReaderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderConfiguration.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
@@ -121,6 +148,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		06218EB325CEAB1200EEFA5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06218EDF25CEAC0A00EEFA5E /* NFCReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_119 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -139,6 +174,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06218EB725CEAB1200EEFA5E /* FelicaExample */ = {
+			isa = PBXGroup;
+			children = (
+				06218EB825CEAB1200EEFA5E /* FelicaExampleApp.swift */,
+				06218EBA25CEAB1200EEFA5E /* ContentView.swift */,
+				06218EBC25CEAB1400EEFA5E /* Assets.xcassets */,
+				06218EC125CEAB1400EEFA5E /* Info.plist */,
+				06218EBE25CEAB1400EEFA5E /* Preview Content */,
+				06218ECE25CEABEA00EEFA5E /* Debug+CustomStringConvertible.swift */,
+			);
+			path = FelicaExample;
+			sourceTree = "<group>";
+		};
+		06218EBE25CEAB1400EEFA5E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				06218EBF25CEAB1400EEFA5E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		06218ECB25CEAB3B00EEFA5E /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				06218EB725CEAB1200EEFA5E /* FelicaExample */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		06218EDE25CEAC0A00EEFA5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		OBJ_13 /* Tags */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,9 +333,11 @@
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_37 /* Tests */,
+				06218ECB25CEAB3B00EEFA5E /* Examples */,
 				OBJ_56 /* Products */,
 				OBJ_60 /* LICENSE */,
 				OBJ_61 /* README.md */,
+				06218EDE25CEAC0A00EEFA5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,6 +354,7 @@
 			children = (
 				"NFCReader::NFCReaderTests::Product" /* NFCReaderTests.xctest */,
 				"NFCReader::NFCReader::Product" /* NFCReader.framework */,
+				06218EB625CEAB1200EEFA5E /* FelicaExample.app */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -310,6 +384,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		06218EB525CEAB1200EEFA5E /* FelicaExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06218EC225CEAB1400EEFA5E /* Build configuration list for PBXNativeTarget "FelicaExample" */;
+			buildPhases = (
+				06218EB225CEAB1200EEFA5E /* Sources */,
+				06218EB325CEAB1200EEFA5E /* Frameworks */,
+				06218EB425CEAB1200EEFA5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06218EDD25CEAC0300EEFA5E /* PBXTargetDependency */,
+			);
+			name = FelicaExample;
+			productName = FelicaExample;
+			productReference = 06218EB625CEAB1200EEFA5E /* FelicaExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		"NFCReader::NFCReader" /* NFCReader */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_63 /* Build configuration list for PBXNativeTarget "NFCReader" */;
@@ -337,6 +429,7 @@
 			);
 			dependencies = (
 				OBJ_121 /* PBXTargetDependency */,
+				06218EFD25CEAD2300EEFA5E /* PBXTargetDependency */,
 			);
 			name = NFCReaderTests;
 			productName = NFCReaderTests;
@@ -364,7 +457,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 9999;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					06218EB525CEAB1200EEFA5E = {
+						CreatedOnToolsVersion = 12.4;
+						ProvisioningStyle = Automatic;
+					};
+					"NFCReader::NFCReaderTests" = {
+						TestTargetID = 06218EB525CEAB1200EEFA5E;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "NFCReader" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -382,11 +485,34 @@
 				"NFCReader::SwiftPMPackageDescription" /* NFCReaderPackageDescription */,
 				"NFCReader::NFCReaderPackageTests::ProductTarget" /* NFCReaderPackageTests */,
 				"NFCReader::NFCReaderTests" /* NFCReaderTests */,
+				06218EB525CEAB1200EEFA5E /* FelicaExample */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		06218EB425CEAB1200EEFA5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06218EC025CEAB1400EEFA5E /* Preview Assets.xcassets in Resources */,
+				06218EBD25CEAB1400EEFA5E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		06218EB225CEAB1200EEFA5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06218F0325CEAD4700EEFA5E /* Debug+CustomStringConvertible.swift in Sources */,
+				06218EBB25CEAB1200EEFA5E /* ContentView.swift in Sources */,
+				06218EB925CEAB1200EEFA5E /* FelicaExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_104 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -447,6 +573,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		06218EDD25CEAC0300EEFA5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "NFCReader::NFCReader" /* NFCReader */;
+			targetProxy = 06218EDC25CEAC0300EEFA5E /* PBXContainerItemProxy */;
+		};
+		06218EFD25CEAD2300EEFA5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06218EB525CEAB1200EEFA5E /* FelicaExample */;
+			targetProxy = 06218EFC25CEAD2300EEFA5E /* PBXContainerItemProxy */;
+		};
 		OBJ_121 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "NFCReader::NFCReader" /* NFCReader */;
@@ -460,6 +596,132 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		06218EC325CEAB1400EEFA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Examples/FelicaExample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Examples/FelicaExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.tattn.NFCReader.FelicaExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06218EC425CEAB1400EEFA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_ASSET_PATHS = "\"Examples/FelicaExample/Preview Content\"";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Examples/FelicaExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.tattn.NFCReader.FelicaExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		OBJ_102 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -480,6 +742,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = NFCReaderTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FelicaExample.app/FelicaExample";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -505,6 +768,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = NFCReaderTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FelicaExample.app/FelicaExample";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -650,6 +914,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		06218EC225CEAB1400EEFA5E /* Build configuration list for PBXNativeTarget "FelicaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06218EC325CEAB1400EEFA5E /* Debug */,
+				06218EC425CEAB1400EEFA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		OBJ_101 /* Build configuration list for PBXNativeTarget "NFCReaderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
