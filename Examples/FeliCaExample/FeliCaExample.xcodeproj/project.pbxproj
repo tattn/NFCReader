@@ -7,32 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06218E5425CE9D7100EEFA5E /* NFCReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06218E4C25CE9D5C00EEFA5E /* NFCReader.framework */; };
 		2469BF6C22FFB5D400362AAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469BF6B22FFB5D400362AAB /* AppDelegate.swift */; };
 		2469BF6E22FFB5D400362AAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469BF6D22FFB5D400362AAB /* SceneDelegate.swift */; };
 		2469BF7022FFB5D400362AAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469BF6F22FFB5D400362AAB /* ContentView.swift */; };
 		2469BF7222FFB5D700362AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2469BF7122FFB5D700362AAB /* Assets.xcassets */; };
 		2469BF7522FFB5D700362AAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2469BF7422FFB5D700362AAB /* Preview Assets.xcassets */; };
 		2469BF7822FFB5D700362AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2469BF7622FFB5D700362AAB /* LaunchScreen.storyboard */; };
-		24CA2B1B2309A14F00D28E37 /* NFCReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CA2B1A2309A14F00D28E37 /* NFCReader.framework */; };
-		24CA2B1C2309A14F00D28E37 /* NFCReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24CA2B1A2309A14F00D28E37 /* NFCReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24CA2B212309A70000D28E37 /* Debug+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CA2B202309A70000D28E37 /* Debug+CustomStringConvertible.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		24CA2B1D2309A14F00D28E37 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				24CA2B1C2309A14F00D28E37 /* NFCReader.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
+/* Begin PBXContainerItemProxy section */
+		06218E4B25CE9D5C00EEFA5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06218E4425CE9D5C00EEFA5E /* NFCReader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "NFCReader::NFCReader::Product";
+			remoteInfo = NFCReader;
 		};
-/* End PBXCopyFilesBuildPhase section */
+		06218E4D25CE9D5C00EEFA5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06218E4425CE9D5C00EEFA5E /* NFCReader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "NFCReader::NFCReaderTests::Product";
+			remoteInfo = NFCReaderTests;
+		};
+		06218E5525CE9D7C00EEFA5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06218E4425CE9D5C00EEFA5E /* NFCReader.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "NFCReader::NFCReader";
+			remoteInfo = NFCReader;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06218E4425CE9D5C00EEFA5E /* NFCReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NFCReader.xcodeproj; path = ../../NFCReader.xcodeproj; sourceTree = "<group>"; };
 		2469BF6822FFB5D400362AAB /* FeliCaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeliCaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2469BF6B22FFB5D400362AAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2469BF6D22FFB5D400362AAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,16 +61,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24CA2B1B2309A14F00D28E37 /* NFCReader.framework in Frameworks */,
+				06218E5425CE9D7100EEFA5E /* NFCReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06218E4525CE9D5C00EEFA5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06218E4C25CE9D5C00EEFA5E /* NFCReader.framework */,
+				06218E4E25CE9D5C00EEFA5E /* NFCReaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2469BF5F22FFB5D400362AAB = {
 			isa = PBXGroup;
 			children = (
+				06218E4425CE9D5C00EEFA5E /* NFCReader.xcodeproj */,
 				2469BF6A22FFB5D400362AAB /* FeliCaExample */,
 				2469BF6922FFB5D400362AAB /* Products */,
 				24E2F540230819C900D18E05 /* Frameworks */,
@@ -117,11 +137,11 @@
 				2469BF6422FFB5D400362AAB /* Sources */,
 				2469BF6522FFB5D400362AAB /* Frameworks */,
 				2469BF6622FFB5D400362AAB /* Resources */,
-				24CA2B1D2309A14F00D28E37 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				06218E5625CE9D7C00EEFA5E /* PBXTargetDependency */,
 			);
 			name = FeliCaExample;
 			packageProductDependencies = (
@@ -137,7 +157,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Tatsuya Tanaka";
 				TargetAttributes = {
 					2469BF6722FFB5D400362AAB = {
@@ -158,12 +178,35 @@
 			);
 			productRefGroup = 2469BF6922FFB5D400362AAB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 06218E4525CE9D5C00EEFA5E /* Products */;
+					ProjectRef = 06218E4425CE9D5C00EEFA5E /* NFCReader.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2469BF6722FFB5D400362AAB /* FeliCaExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		06218E4C25CE9D5C00EEFA5E /* NFCReader.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NFCReader.framework;
+			remoteRef = 06218E4B25CE9D5C00EEFA5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		06218E4E25CE9D5C00EEFA5E /* NFCReaderTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = file;
+			path = NFCReaderTests.xctest;
+			remoteRef = 06218E4D25CE9D5C00EEFA5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2469BF6622FFB5D400362AAB /* Resources */ = {
@@ -191,6 +234,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06218E5625CE9D7C00EEFA5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NFCReader;
+			targetProxy = 06218E5525CE9D7C00EEFA5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2469BF7622FFB5D700362AAB /* LaunchScreen.storyboard */ = {
@@ -230,6 +281,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -290,6 +342,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

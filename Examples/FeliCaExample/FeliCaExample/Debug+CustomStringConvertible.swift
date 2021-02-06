@@ -20,6 +20,8 @@ extension Suica.BoardingHistory.Detail: CustomStringConvertible {
             return "[Bus] Business: \(bus.businessCode), Stop: \(bus.stopCode)"
         case .shopping(let shopping):
             return "[Shopping] \(shopping.hour):\(shopping.minute):\(shopping.second)秒 Payment Machine: \(shopping.paymentDeviceId)"
+        @unknown default:
+            fatalError()
         }
     }
 }

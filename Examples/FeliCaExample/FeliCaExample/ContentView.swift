@@ -35,6 +35,8 @@ struct ContentView: View {
                         balance = UInt(waon.histories.first?.balance ?? 0)
                     case .suica(let suica):
                         balance = UInt(suica.boardingHistories.first?.balance ?? 0)
+                    @unknown default:
+                        fatalError()
                     }
                     print(tag)
                     reader.setMessage("Your balance is ¥\(balance) .")

@@ -78,7 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		"NFCReader::NFCReader::Product" /* NFCReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NFCReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"NFCReader::NFCReader::Product" /* NFCReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NFCReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"NFCReader::NFCReaderTests::Product" /* NFCReaderTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = NFCReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
 		OBJ_11 /* ReaderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderConfiguration.swift; sourceTree = "<group>"; };
@@ -114,7 +114,6 @@
 		OBJ_52 /* FeliCaTagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeliCaTagTests.swift; sourceTree = "<group>"; };
 		OBJ_54 /* FixedWidthIntegerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedWidthIntegerTests.swift; sourceTree = "<group>"; };
 		OBJ_55 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_59 /* Examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Examples; sourceTree = SOURCE_ROOT; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_60 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_61 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -257,18 +256,16 @@
 			path = FeliCa;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_37 /* Tests */,
 				OBJ_56 /* Products */,
-				OBJ_59 /* Examples */,
 				OBJ_60 /* LICENSE */,
 				OBJ_61 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_53 /* Utilities */ = {
@@ -376,7 +373,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_56 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -516,6 +513,7 @@
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -543,6 +541,7 @@
 		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
@@ -583,7 +582,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NFCReader;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = NFCReader;
@@ -611,7 +609,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NFCReader;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = NFCReader;
